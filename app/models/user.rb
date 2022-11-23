@@ -7,12 +7,14 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          authentication_keys: [:login]
 
-  validates :username, presence: true, uniqueness: { case_sensitive: false }
+  # validates_presence_of :country
   validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
+  validates :username, presence: true, uniqueness: { case_sensitive: false }
   validate :validate_username
 
   def validate_username
     errors.add(:username, :invalid) if User.where(email: username).exists?
+    errors.add(:username, :invalid) if User.where(username: username).exists?
   end
 
   def login
