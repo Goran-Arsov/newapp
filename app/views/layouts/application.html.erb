@@ -14,8 +14,12 @@
   </head>
 
   <body>
-    <p class="notice" style="color:green"><%= notice %></p>
-    <p class="alert" style="color:red"><%= alert %></p>
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>">
+        <%= value %>
+      </div>
+    <% end %> <br />
+
     <%= yield %>
   </body>
 </html>

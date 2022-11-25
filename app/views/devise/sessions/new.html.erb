@@ -1,6 +1,5 @@
-<h2>Log in</h2><br />
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<h1 class="text-blue-800 mx-4 border-2 bg-green-100"><b>Log in</b></h1><br />
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), data: {turbo: false}) do |f| %>
   <div class="field">
     <%= f.label :login %><br />
     <%= f.text_field :login, autofocus: true, autocomplete: "login" %>
