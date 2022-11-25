@@ -21,8 +21,5 @@
   "bugs": {
     "url": "https://github.com/Goran-Arsov/newapp/issues"
   },
-  "homepage": "https://github.com/Goran-Arsov/newapp#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.2.4"
-  }
+  "homepage": "https://github.com/Goran-Arsov/newapp#readme"
 }
