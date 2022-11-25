@@ -1,0 +1,28 @@
+{
+  "name": "newapp",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tailwindcss -i app/assets/stylesheets/application.tailwind.css -o app/assets/build/tailwind.css",
+    "watch": "tailwindcss -i app/assets/stylesheets/application.tailwind.css -o app/assets/build/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goran-Arsov/newapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Goran-Arsov/newapp/issues"
+  },
+  "homepage": "https://github.com/Goran-Arsov/newapp#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
